@@ -1,7 +1,10 @@
 #include <iostream>
 using namespace std;
 int main() {
-    for (int i = 1; i <= 9; i++) {
+    int sondeger;
+    cout << "son deger gir: ";
+    cin >> sondeger;
+    for (int i = 1; i <= sondeger; i++) {
         switch (i) {
         case 1:
             cout << "   " << i << "\t";
@@ -9,15 +12,15 @@ int main() {
         default:
             cout << i << "\t";
             break;
-        }  
+        }
     }
     cout << "\n";
-    for (int c = 1; c < 10; c++) {
-        cout << c << "| ";
-        for (int i = 1; i < 10; i++) {
-            cout << i * c << '\t';
+    for (int i = 1; i <= sondeger; i++) {
+        cout << i << "| ";
+        for (int a = 1; a <= sondeger; a++) {
+            cout << a * i << "\t";
         }
-        cout << endl;
+        cout << "\n";
     }
     return 0;
 }
